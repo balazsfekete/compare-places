@@ -1,5 +1,6 @@
 import maplibregl from 'maplibre-gl'
 import './style/global.css'
+import satelliteStyle from './satellite.json'
 
 const getZoomAdjustment = (oldLat, newLat) => Math.log2(Math.cos((newLat / 180) * Math.PI) / Math.cos((oldLat / 180) * Math.PI))
 const wrapAngle = (angle) => ((((angle + 180) % 360) + 360) % 360) - 180
@@ -128,6 +129,6 @@ document.getElementById('mapStyleButton').onclick = () => {
 }
 
 document.getElementById('satelliteStyleButton').onclick = () => {
-  mapA.setStyle('/satellite.json')
-  mapB.setStyle('/satellite.json')
+  mapA.setStyle(satelliteStyle)
+  mapB.setStyle(satelliteStyle)
 }
