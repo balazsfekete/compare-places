@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  min-height: 100dvh;
+  display: grid;
+  background: hsl(220, 5%, 40%);
+  gap: 1px;
+  overflow: hidden;
+}
+
+@media (min-aspect-ratio: 1/1) {
+  body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+#styleSwitcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  display: flex;
+
+  button {
+    cursor: pointer;
+  }
+}

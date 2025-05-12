@@ -1,0 +1,12 @@
+.maplibregl-ctrl-scale {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.maplibregl-ctrl-attrib {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
